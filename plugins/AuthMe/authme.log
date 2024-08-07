@@ -1,0 +1,99 @@
+[08-05 15:30:34]: [INFO] Created column 'regdate' and set the current timestamp, 1722861034768, to all 0 rows
+[08-05 15:30:35]: [INFO] SQLite Setup finished
+[08-05 15:30:35]: [WARN] Aborting initialization of AuthMe: [InjectorReflectionException]: Could not invoke method 'setup' for fr.xephi.authme.permission.PermissionsManager@50374b15
+[08-05 15:30:35]: fr.xephi.authme.libs.jalu.injector.exceptions.InjectorReflectionException: Could not invoke method 'setup' for fr.xephi.authme.permission.PermissionsManager@50374b15
+	at fr.xephi.authme.libs.jalu.injector.utils.ReflectionUtils.invokeMethod(ReflectionUtils.java:76)
+	at fr.xephi.authme.libs.jalu.injector.handlers.postconstruct.PostConstructMethodInvoker.process(PostConstructMethodInvoker.java:25)
+	at fr.xephi.authme.libs.jalu.injector.InjectorImpl.runPostConstructHandlers(InjectorImpl.java:255)
+	at fr.xephi.authme.libs.jalu.injector.InjectorImpl.instantiate(InjectorImpl.java:182)
+	at fr.xephi.authme.libs.jalu.injector.InjectorImpl.get(InjectorImpl.java:155)
+	at fr.xephi.authme.libs.jalu.injector.InjectorImpl.resolveDependencies(InjectorImpl.java:208)
+	at fr.xephi.authme.libs.jalu.injector.InjectorImpl.instantiate(InjectorImpl.java:177)
+	at fr.xephi.authme.libs.jalu.injector.InjectorImpl.get(InjectorImpl.java:155)
+	at fr.xephi.authme.libs.jalu.injector.InjectorImpl.resolveDependencies(InjectorImpl.java:208)
+	at fr.xephi.authme.libs.jalu.injector.InjectorImpl.instantiate(InjectorImpl.java:177)
+	at fr.xephi.authme.libs.jalu.injector.InjectorImpl.get(InjectorImpl.java:155)
+	at fr.xephi.authme.libs.jalu.injector.InjectorImpl.getSingleton(InjectorImpl.java:56)
+	at fr.xephi.authme.AuthMe.instantiateServices(AuthMe.java:248)
+	at fr.xephi.authme.AuthMe.initialize(AuthMe.java:221)
+	at fr.xephi.authme.AuthMe.onEnable(AuthMe.java:136)
+	at TRANSFORMER/forge@47.2.20/org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:266)
+	at TRANSFORMER/forge@47.2.20/org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:442)
+	at TRANSFORMER/forge@47.2.20/org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:481)
+	at TRANSFORMER/forge@47.2.20/org.bukkit.craftbukkit.v1_20_R1.CraftServer.enablePlugin(CraftServer.java:460)
+	at TRANSFORMER/forge@47.2.20/org.bukkit.craftbukkit.v1_20_R1.CraftServer.enablePlugins(CraftServer.java:373)
+	at TRANSFORMER/minecraft@1.20.1/net.minecraft.server.MinecraftServer.m_129815_(MinecraftServer.java:613)
+	at TRANSFORMER/minecraft@1.20.1/net.minecraft.server.MinecraftServer.m_130006_(MinecraftServer.java:397)
+	at TRANSFORMER/minecraft@1.20.1/net.minecraft.server.dedicated.DedicatedServer.m_7038_(DedicatedServer.java:250)
+	at TRANSFORMER/minecraft@1.20.1/net.minecraft.server.MinecraftServer.m_130011_(MinecraftServer.java:969)
+	at TRANSFORMER/minecraft@1.20.1/net.minecraft.server.MinecraftServer.m_206580_(MinecraftServer.java:285)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at fr.xephi.authme.libs.jalu.injector.utils.ReflectionUtils.invokeMethod(ReflectionUtils.java:73)
+	... 25 more
+Caused by: java.lang.NoClassDefFoundError: me/lucko/luckperms/LuckPerms
+	at fr.xephi.authme.permission.handlers.LuckPermsHandler.<init>(LuckPermsHandler.java:37)
+	at fr.xephi.authme.permission.PermissionsManager.createPermissionHandler(PermissionsManager.java:137)
+	at fr.xephi.authme.permission.PermissionsManager.setup(PermissionsManager.java:96)
+	... 30 more
+Caused by: java.lang.ClassNotFoundException: me.lucko.luckperms.LuckPerms
+	at TRANSFORMER/forge@47.2.20/org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:157)
+	at TRANSFORMER/forge@47.2.20/org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:109)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	... 33 more
+
+[08-05 15:30:35]: [WARN] THE SERVER IS GOING TO SHUT DOWN AS DEFINED IN THE CONFIGURATION!
+[08-05 15:30:35]: [INFO] AuthMe 5.4.0-b1877 disabled!
+[08-05 15:56:11]: [INFO] SQLite Setup finished
+[08-05 15:56:12]: [WARN] Aborting initialization of AuthMe: [InjectorReflectionException]: Could not invoke method 'setup' for fr.xephi.authme.permission.PermissionsManager@12b7eb54
+[08-05 15:56:12]: fr.xephi.authme.libs.jalu.injector.exceptions.InjectorReflectionException: Could not invoke method 'setup' for fr.xephi.authme.permission.PermissionsManager@12b7eb54
+	at fr.xephi.authme.libs.jalu.injector.utils.ReflectionUtils.invokeMethod(ReflectionUtils.java:76)
+	at fr.xephi.authme.libs.jalu.injector.handlers.postconstruct.PostConstructMethodInvoker.process(PostConstructMethodInvoker.java:25)
+	at fr.xephi.authme.libs.jalu.injector.InjectorImpl.runPostConstructHandlers(InjectorImpl.java:255)
+	at fr.xephi.authme.libs.jalu.injector.InjectorImpl.instantiate(InjectorImpl.java:182)
+	at fr.xephi.authme.libs.jalu.injector.InjectorImpl.get(InjectorImpl.java:155)
+	at fr.xephi.authme.libs.jalu.injector.InjectorImpl.resolveDependencies(InjectorImpl.java:208)
+	at fr.xephi.authme.libs.jalu.injector.InjectorImpl.instantiate(InjectorImpl.java:177)
+	at fr.xephi.authme.libs.jalu.injector.InjectorImpl.get(InjectorImpl.java:155)
+	at fr.xephi.authme.libs.jalu.injector.InjectorImpl.resolveDependencies(InjectorImpl.java:208)
+	at fr.xephi.authme.libs.jalu.injector.InjectorImpl.instantiate(InjectorImpl.java:177)
+	at fr.xephi.authme.libs.jalu.injector.InjectorImpl.get(InjectorImpl.java:155)
+	at fr.xephi.authme.libs.jalu.injector.InjectorImpl.getSingleton(InjectorImpl.java:56)
+	at fr.xephi.authme.AuthMe.instantiateServices(AuthMe.java:248)
+	at fr.xephi.authme.AuthMe.initialize(AuthMe.java:221)
+	at fr.xephi.authme.AuthMe.onEnable(AuthMe.java:136)
+	at TRANSFORMER/forge@47.2.20/org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:266)
+	at TRANSFORMER/forge@47.2.20/org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:442)
+	at TRANSFORMER/forge@47.2.20/org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:481)
+	at TRANSFORMER/forge@47.2.20/org.bukkit.craftbukkit.v1_20_R1.CraftServer.enablePlugin(CraftServer.java:460)
+	at TRANSFORMER/forge@47.2.20/org.bukkit.craftbukkit.v1_20_R1.CraftServer.enablePlugins(CraftServer.java:373)
+	at TRANSFORMER/minecraft@1.20.1/net.minecraft.server.MinecraftServer.m_129815_(MinecraftServer.java:613)
+	at TRANSFORMER/minecraft@1.20.1/net.minecraft.server.MinecraftServer.m_130006_(MinecraftServer.java:397)
+	at TRANSFORMER/minecraft@1.20.1/net.minecraft.server.dedicated.DedicatedServer.m_7038_(DedicatedServer.java:250)
+	at TRANSFORMER/minecraft@1.20.1/net.minecraft.server.MinecraftServer.m_130011_(MinecraftServer.java:969)
+	at TRANSFORMER/minecraft@1.20.1/net.minecraft.server.MinecraftServer.m_206580_(MinecraftServer.java:285)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at fr.xephi.authme.libs.jalu.injector.utils.ReflectionUtils.invokeMethod(ReflectionUtils.java:73)
+	... 25 more
+Caused by: java.lang.NoClassDefFoundError: me/lucko/luckperms/LuckPerms
+	at fr.xephi.authme.permission.handlers.LuckPermsHandler.<init>(LuckPermsHandler.java:37)
+	at fr.xephi.authme.permission.PermissionsManager.createPermissionHandler(PermissionsManager.java:137)
+	at fr.xephi.authme.permission.PermissionsManager.setup(PermissionsManager.java:96)
+	... 30 more
+Caused by: java.lang.ClassNotFoundException: me.lucko.luckperms.LuckPerms
+	at TRANSFORMER/forge@47.2.20/org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:157)
+	at TRANSFORMER/forge@47.2.20/org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:109)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	... 33 more
+
+[08-05 15:56:12]: [WARN] THE SERVER IS GOING TO SHUT DOWN AS DEFINED IN THE CONFIGURATION!
+[08-05 15:56:12]: [INFO] AuthMe 5.4.0-b1877 disabled!
